@@ -1,2 +1,2 @@
-#!/bin/bash
-sudo npm run test:unit && npm run test:integration
+#!/bin/bash 
+npm run test:unit && npm run test:integration
