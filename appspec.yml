@@ -23,7 +23,7 @@ os: linux
 #   "files" section altogether. A blank or incomplete "files" section
 #   may cause associated deployments to fail.
 files:
-  - source: "/" 
+  - source: / 
     destination: /var/www
     #  - source:
     # destination:
@@ -51,7 +51,7 @@ files:
 #      type:
 #      range:
 #    type:
-      -
+#      -
 # If you are not running any commands on the Amazon EC2 instance, then remove 
 #   the "hooks" section altogether. A blank or incomplete "hooks" section
 #   may cause associated deployments to fail.
