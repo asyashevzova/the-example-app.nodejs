@@ -1,0 +1,74 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+     # key: "value"
+     # key: "value"
+
+phases:
+  #install:
+    #commands:
+      # - command
+      # - command
+    #finally:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+    #finally:
+      # - command
+      # - command
+  build:
+    commands:
+      - npm install
+    #finally:
+      # - command
+      # - command
+  #post_build:
+    #commands:
+      # - command
+      # - command
+    #finally:
+      # - command
+      # - command
+artifacts:
+  files:
+    - bin/*
+    - handlers/*
+    - i18n/*
+    - lib/*
+    - node_modules/*
+    - public/*
+    - routes/*
+    - scripts/*
+    - services/*
+    - test/*
+    - views/*
+    - .dockerignore
+    - .eslintrc.js
+    - .gitignore
+    - .nvmrc
+    - Dockerfile
+    - LICENSE
+    - README.md
+    - app.js
+    - app.json
+    - appspec.yml
+    - buildspec.yml
+    - cypress.json
+    - .eslintrc.js
+    - helpers.js
+    - package-lock.json
+    - package.json
+    - variables.env
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - path
+    # - path
