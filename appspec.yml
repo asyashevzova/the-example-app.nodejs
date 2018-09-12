@@ -118,7 +118,7 @@ hooks:
   ValidateService:
     - location: scripts/apptest.sh
       timeout: 300
-      runas: ubuntu
+      runas: root
       #    - location: 
       # timeout:
       #runas:
