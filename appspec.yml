@@ -97,17 +97,17 @@ hooks:
       #runas:
 # During the AfterInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
-  AfterInstall:
-    - location: scripts/appdevstart.sh
-      timeout: 300
-      runas: ubuntu
-      #    - location: 
+#  AfterInstall:
+#    - location: scripts/appdevstart.sh
+#      timeout: 300
+#      runas: ubuntu
+#      #    - location: 
       # timeout:
       #runas:
 # During the ApplicationStart deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   ApplicationStart:
-    - location: scripts/appprodstart.sh
+    - location: scripts/appdevstart.sh
       timeout: 300
       runas: ubuntu
       #    - location: 
