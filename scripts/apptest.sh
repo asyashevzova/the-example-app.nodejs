@@ -6,3 +6,6 @@ function checkservice () {
 	else
 		exit 1
 	fi
+}
+
+checkservice
