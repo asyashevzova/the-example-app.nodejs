@@ -1,5 +1,8 @@
 pipeline {
-    agent any 
+    agent any
+    environment {
+    JENKINS_NODE_COOKIE=dontKillMe /usr/bin/node
+    } 
     stages {
         stage('Build') { 
             steps {
@@ -20,9 +23,8 @@ pipeline {
                     fi
                     sudo cp -r ./* /var/www/html/nodeapp
                     cd /var/www/html/nodeapp
-                    echo $(pwd)
+                    npm run start:dev &
                 '''
-                sh 'npm run start:dev &'
             }
         }
     }
