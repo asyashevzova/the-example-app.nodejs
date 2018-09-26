@@ -19,7 +19,7 @@ pipeline {
                     sudo mkdir /var/www/html/nodeapp
                     fi
                     sudo cp -r ./* /var/www/html/nodeapp
-                    npm run start:dev
+                    npm run start:dev &
                 '''
             }
         }
