@@ -21,7 +21,7 @@ pipeline {
                     sudo cp -r ./* /var/www/html/nodeapp
                     cd /var/www/html/nodeapp
                     echo $(pwd)
-                    npm run start:dev &
+                    node ./bin/www &
                 '''
             }
         }
