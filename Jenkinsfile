@@ -21,7 +21,7 @@ pipeline {
                     fi
                     sudo cp -r ./* /var/www/html/nodeapp
                     cd /var/www/html/nodeapp
-                    bash startup.sh
+                    bash ./startup.sh
                 '''
             }
         }
