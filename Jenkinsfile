@@ -13,7 +13,11 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                sh 'sudo mkdir /var/www/html/nodeapp && sudo cp -r ./* /var/www/html/nodeapp' 
+                sh '''
+                    sudo mkdir /var/www/html/nodeapp
+                    sudo cp -r ./* /var/www/html/nodeapp
+                    nmp run start:dev
+                '''
             }
         }
     }
