@@ -14,7 +14,9 @@ pipeline {
         stage('Deploy') { 
             steps {
                 sh '''
+                    if [ ! -d /var/www/html/nodeapp ]
                     sudo mkdir /var/www/html/nodeapp
+                    fi
                     sudo cp -r ./* /var/www/html/nodeapp
                     nmp run start:dev
                 '''
