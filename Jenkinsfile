@@ -15,6 +15,7 @@ pipeline {
             steps {
                 sh '''
                     if [ ! -d /var/www/html/nodeapp ]
+                    then
                     sudo mkdir /var/www/html/nodeapp
                     fi
                     sudo cp -r ./* /var/www/html/nodeapp
